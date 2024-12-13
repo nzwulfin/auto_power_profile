@@ -1,0 +1,10 @@
+[Unit]
+Description=Automatically Adjust Power Profile on battery
+After=upower.service
+
+[Service]
+Type=simple
+ExecStart=/home/mmicene/bin/auto_power_profile.sh
+
+[Install]
+WantedBy=default.target
